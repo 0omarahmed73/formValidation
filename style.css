@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+form {
+  background-color: #264A5E;
+  min-height: 100vh;
+  position: relative;
+}
+.container {
+  width: 25rem;
+  margin: auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  background: #EEE;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  transform: translate(-50%,-50%);
+}
+
+h2 {
+  font-size: 23px;
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+label {
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+
+input {
+  width: 100%;
+  padding: 7px 13px;
+  border-radius: 6px;
+  border: 1.5px solid #EEE;
+}
+
+input[type = "submit"]{
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+input:focus {
+  outline: none;
+}
+.input-control {
+  margin-bottom: 10px;
+
+}
+.input-control.errorValid input {
+  border : 1.5px solid #ff3860;
+}
+
+.input-control.successValid input{
+  border : 2px solid #09c372;
+}
+
+.error {
+  color: #ff3860 ;
+  padding:1px 2px;
+  height: 4px;
+  font-size: 12px;
+}
+
+.labelPassword {
+  font-size: 10px;
+  margin: 2px 2px -3px 2px !important;
+  color: #aba7a7;
+}
+/* Extra small devices (less than 576px) */
+@media (max-width: 575.98px) {
+  .container {
+    width: 80%
+  }
+}
+
+/* Small devices (576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  }
+
+/* Medium devices (768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container {
+    width: 35%;
+    padding: 23px ;
+  }}
+
+/* Large devices (992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .container {
+    width: 30%;
+    padding: 23px ;
+  }
+}
+
+/* Extra large devices (1200px and up) */
+@media (min-width: 1200px) {
+  /* CSS styles for extra large devices go here */
+}
